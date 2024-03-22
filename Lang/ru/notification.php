@@ -8,9 +8,6 @@ return array(
     "new_reply"             => "Новый тикет - ответ",
     "new_reply_text"        => "Новый ответ был отправлен :name в тикете #:item.",
 
-    "operator_login"        => "Оператор вошел в систему",
-    "operator_login_text"   => ":name авторизовался на панели оператора.",
-
     "failed_logins"         => "Неудачные входы оператора",
     "new_comments"          => "Новые комментарии",
 
@@ -23,5 +20,11 @@ return array(
      * 2.1.1
      */
     "private_message_text"  => ":name отправил вам новое <a href=':route'>личное сообщение</a>.",
+
+    /*
+     * 4.2.0
+     */
+    "new_mention"           => "New Mention",
+    "new_mention_text"      => ":name mentioned you in ticket #<a href=':route'>:number</a>.",
 
 );
