@@ -40,8 +40,6 @@ return array(
     "recent_tickets"            => "Недавние тикеты",
     "last_message_text"         => "Текст последнего сообщения",
 
-    "set_due_time"              => "Установить время",
-
     "settings"                  => "Настройки тикетов",
 
     "priority"                  => "Приоритет | Приоритеты",
@@ -160,7 +158,6 @@ return array(
     "allowed_files"             => "Разрешенные типы файлов вложений",
 
     // Drafts
-    "also_viewing"              => "<strong>:name</strong> просмотр тикетов.",
     "draft_saved"               => "Черновик сохранен в :time",
     "save_draft"                => "Сохранить черновик",
     "discard_draft"             => "Удалить черновить",
@@ -188,10 +185,6 @@ return array(
     "sla_plan"                  => "План SLA | Планы SLA",
     "specific_schedule"         => "Конкретные графики",
     "calendar_hours_24"         => "Календарные часы (24 часа)",
-    "resolution_time"           => "Разрешение раз",
-    "resolution_time_desc"      => "Установите время, на которое тикет должен отвечать и разрешаться по приоритету. Время будет учитываться только в рабочие часы на основе выбранного расписания, могут использоваться десятичные значения.",
-    "reply_within"              => "Ответить внутри",
-    "resolve_within"            => "Разрешить внутри",
     "plan"                      => "план",
     "sla_condition"             => "Условия SLA",
     "sla_condition_desc"        => "Определите условия заявки, для которых проверяются новые заявки, чтобы увидеть, подпадают ли они под этот план. Если новый тикет соответствует нескольким планам SLA, он будет выбран с приоритетом плана, который можно изменить, перейдя в список планов и повторный заказ. ",
@@ -244,7 +237,6 @@ return array(
     "ticket_notes_top"          => "Только сверху",
     "ticket_notes_messages"     => "Только в сообщениях",
 
-    "captcha_desc"              => "Когда капча должна быть показана пользователям, открывающим новые тикеты.",
     "unregistered_only"         => "Только незарегистрированные пользователи",
 
     "allow_unauth_users"        => "Разрешить неаутентифицированным пользователям",
@@ -259,7 +251,6 @@ return array(
     // Email Channel Settings
     "default_priority"          => "Приоритет по умолчанию",
     "default_priority_desc"     => "Приоритет по умолчанию устанавливается для всех входящих тикетов через этот канал.",
-    "verbose_email_log"         => "Подробный электронный журнал",
 
     "last_reply"                => "Последний ответ",
     "opened_at"                 => "Открыт в",
@@ -276,7 +267,6 @@ return array(
     "add_tag"                   => "Добавить тег ",
 
     "unlock"                    => "Разблокировать",
-    "merge"                     => "Объединить",
     "merged"                    => "Объединенное",
     "unmerge"                   => "Разьединить",
     "close_and_lock"            => "Закрыть и заблокировать ",
@@ -401,7 +391,6 @@ return array(
     "email_user_frontend"       => "Пользователи электронной почты на тикетах, открытых в Frontend",
     "email_user_frontend_desc"  => "Выберите, следует ли уведомлять пользователей по электронной почте, когда они сами открывают заявку в веб-интерфейсе.",
     "department_template_disabled" => "Соответствующий шаблон электронной почты отдела отключен, поэтому это письмо не может быть отправлено.",
-    "verbose_email_log_desc"    => "Если коллекция файлов электронной почты должна регистрироваться в файле, рекомендуется отключить ее, если это не указано в поддержке отладки. Сохраняются журналы на пять дней, более старые файлы журналов будут автоматически очищаться системой.",
 
     /*
      * 2.2.0
@@ -421,7 +410,6 @@ return array(
      */
     "registered_users_desc"     => " Переключить, чтобы показывать только отдел для зарегистрированных пользователей и принимать электронные письма только от пользователей, активно зарегистрированных в справочной службе. Если этот параметр включен, электронное письмо о возврате будет отправлено незарегистрированным пользователям, которые отправили в этот отдел электронное письмо, чтобы изменить или отключите электронную почту, см. ниже шаблон # Только для зарегистрированных пользователей #. ",
     "form_fields_desc"          => "Если вы хотите собирать дополнительную информацию, когда пользователь предоставляет свои отзывы, вы можете настроить настраиваемые поля для отображения здесь в форме. Тип поля будет заблокирован, как только форма будет заполнена пользователем . ",
-    "feedback_ratings"          => "Рейтинги удовлетворенности клиентов (влияющие на ваш рейтинг удовлетворенности клиентов)",
     "email_and_other_accounts"  => "Учетные записи электронной почты и других каналов",
     "delete_message"            => "Удалить сообщение",
     "linked_tickets"            => "Связанные тикеты",
@@ -454,7 +442,6 @@ return array(
     "select_a_department_email" => "Выберите адрес почты отдела... ",
     "record_public_desc"        => "Установите этот флажок, чтобы только запись: была доступна для вас.",
     "record_group_desc"         => "Если вы хотите сделать :record видимой только для определенных групп операторов, оставьте поле пустым, чтобы сделать видимыми все операторы.",
-    "ticket_format_desc"        => "Может содержать буквенно-цифровые символы и специальные символы <code> -_. +! *, </ Code> <br /> Также могут использоваться следующие переменные:% S для порядкового номера | % N для случайного числа | % L для случайной буквы <br /> Используйте {число}, чтобы повторить <strong> только </ strong> после% N или% L, например, % N {4} соответствует 4 случайным числам,% L {3} соответствует 3 случайным буквам <br /> Следующее <a href = 'http: //php.net/manual/en/function.date.php' target = '_ blank'> PHP Date </a> Параметры с префиксом% Y, y, m, d, j, g, G, h, H, i, s",
 
     /*
      * 2.4.0
@@ -507,7 +494,6 @@ return array(
      * 3.0.0
      */
     "merge_tickets_into"        => "Select ticket to merge into",
-    "search_number_or_subject"  => "Search by ticket number or subject",
     "im_not_sure"               => "I'm not sure",
     "auto_reply_detected"       => "Auto-reply detected - no notification will be sent to the user(s).",
     "cc_desc"                   => "Вы можете добавить других пользователей в тикет введя их адрес электронной почты здесь",
@@ -544,5 +530,47 @@ return array(
      */
     "on_behalf_of"              => "Created on behalf of",
     "reply_canned_be_posted"    => "It is not currently possible to reply to this ticket; the channel or channel account may be disabled.",
+
+    /*
+     * 4.1.0
+     */
+    "ticket_format_desc"        => "Может содержать буквенно-цифровые символы и специальные символы <code> -_. +! *, </ Code> <br /> Также могут использоваться следующие переменные:% S для порядкового номера | % N для случайного числа | % L для случайной буквы <br /> Используйте {число}, чтобы повторить <strong> только </ strong> после% N или% L, например, % N {4} соответствует 4 случайным числам,% L {3} соответствует 3 случайным буквам <br /> Следующее <a href = 'http: //php.net/manual/en/function.date.php' target = '_ blank'> PHP Date </a> Параметры с префиксом% Y, y, m, d, j, g, G, h, H, i, s",
+    "append_ip_address_api_desc" => "Append the user's IP address to the end of their ticket messages (requires user_ip_address data to be provided).",
+    "check_spam"                => "Check Spam Rules",
+    "check_spam_api_desc"       => "Block messages which match spam rules.",
+    "enable_throttling"         => "Enable Throttling",
+    "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
+    "captcha_desc"              => "Когда капча должна быть показана пользователям, открывающим новые тикеты.",
+
+    /*
+     * 5.0.0
+     */
+    "also_viewing"              => "<strong>:name</strong> просмотр тикетов.",
+    "mark_as_read"              => "Mark as Read",
+    "mark_as_unread"            => "Mark as Unread",
+    "sla_targets"               => "SLA Target|SLA Targets",
+    "sla_targets_desc"          => "Set target times that a ticket must be responded to by and resolved by per priority. The time will be counted only during business hours based on the schedule(s) chosen, decimal values can be used. Leave value blank to not set a target for that priority.",
+    "first_reply_time"          => "First Reply Time",
+    "next_reply_time"           => "Next Reply Time",
+    "resolution_time"           => "Разрешение раз",
+    "reply_due_in"              => "Reply due :time",
+    "resolve_in"                => "Resolve :time",
+    "paused_ago"                => "Paused :time",
+    "reply_due_time"            => "Reply due time",
+    "resolution_due_time"       => "Resolution due time",
+    "set_reply_due_time"        => "Set reply due time",
+    "set_resolution_due_time"   => "Set resolution due time",
+
+    /*
+     * 5.2.0
+     */
+    "block_user_desc"           => "The user will be unable to open any further tickets, and the ticket moved to the trash.",
+
+    /*
+     * 5.3.0
+     */
+    "reject_duplicate_emails"   => "Reject Duplicate Emails",
+    "reject_duplicate_emails_desc" => "Stop emails being imported more than once, detected based on the Message-ID header.",
+    "duplicate_email_detected"  => "Duplicate email that has already been imported.",
 
 );

@@ -56,7 +56,6 @@ return array(
 
     // Report
     "report"            => "Просмотр отчетов",
-    "reportdashboard"   => "Посмотреть панель инструментов",
 
     // General
     "tag"               => "Управление тегами",
@@ -77,7 +76,6 @@ return array(
     // User
     "usercustomfield"   => "Управление пользовательскими полями пользователя",
     "organisationcustomfield" => "Управление пользовательскими полями организации",
-    "operatorsignature" => "Управление подписями операторов",
 
     /*
      * 2.1.1
@@ -125,4 +123,18 @@ return array(
     "addon"             => "View and Manage Add-ons",
     "system_health"     => "View System Health",
 
+    /*
+     * 4.2.0
+     */
+    "operatorreplytemplate" => "Manage Operator Reply Templates",
+
+    /*
+     * 5.0.0
+     */
+    "private_messaging" => "View Private Messages",
+
+    /*
+     * 5.1.0
+     */
+    "manage_report"     => "Manage Reports",
 );
