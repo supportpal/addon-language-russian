@@ -150,7 +150,12 @@ return array(
      */
     "type_protected_desc"       => "Toggle to only show content in this type to logged in users.",
     "article_feedback"          => "Article Feedback",
-    "thank_you_for_feedback"    => "Thank you for your feedback on this article.",
     "frontend_icon_desc"        => "Select a <a href='https://fontawesome.com/icons' target='_blank'>FontAwesome</a> regular icon to display on the frontend for your type, you can also search for a custom icon not included in the list (starting with 'fa-').",
+    "comment_deleted"           => "Comment deleted",
+
+    /*
+     * 5.3.0
+     */
+    "in_reply_to"               => "in reply to",
 
 );

@@ -23,7 +23,6 @@ return array(
     "transfer_ownership_desc"       => "Как текущий владелец организации, вы не можете быть удалены как руководитель, и только вы можете удалить организацию. Вы можете передать право собственности на организацию другому лицу, помните, что это действие нельзя отменить.",
     "transfer_ownership_operator"   => "Только владелец может удалить организацию и не может быть удален из нее. Используйте эту опцию, чтобы изменить владельца на другого пользователя в организации.",
     "start_typing_name"             => "Начните вводить имя ...",
-    "organisation_add_user"         => "Добавить пользователя в организацию",
     "organisation_desc"             => "В каждой организации могут быть <strong> менеджеры </ strong>, которые могут управлять пользователями, читать и отвечать на тикеты других, и <strong> пользователи </ strong>, которые могут открывать тикеты, но не могут читать или отвечать на тикеты других.",
     "organisation_operator_desc"    => "Добавьте существующих пользователей в эту организацию, нажав кнопку # Добавить пользователя # и выполнив поиск по их имени. Обратите внимание, что добавление пользователя удалит все ссылки, которые у него есть, с другой организацией.",
     "organisation_user_desc"        => "<strong>Менеджер</strong> - Может управлять другими пользователями и просматривать и отвечать на тикеты других пользователей.<br /> < strong>пользователь< / strong> - может открывать тикеты только от имени организации и отвечать на собственные тикеты.",
@@ -56,9 +55,6 @@ return array(
     "country"                       => "Страна",
     "avatar"                        => "Аватар",
     "confirm_password"              => "Подтвердить пароль",
-
-    "confirmed"                     => "подтверждено",
-    "unconfirmed"                   => "неподтвержденный",
 
     "group"                         => "Группа пользователей | Группы пользователей",
     "group_members"                 => "Участники группы",
@@ -137,7 +133,6 @@ return array(
     "two_fa_secret"                 => "Секретный ключ 2FA",
     "two_fa_secret_desc"            => "Пожалуйста, сохраните это где-нибудь в безопасности, так как оно понадобится вам для повторного добавления учетной записи в аутентификатор, в случае утери телефона или проблем с аутентификатором.",
     "display_notifications"         => "Показать уведомления",
-    "display_notifications_desc"    => "Система уведомит вас, когда будут созданы новые заявки или ответы, или когда другие операторы войдут в систему. Вы можете выбрать между уведомлениями на рабочем столе или уведомлениями в браузере, либо полностью отключитьо их.",
     "desktop_notifications"         => "ПК уведомления",
     "browser_notifications"         => "Уведомления браузера",
 
@@ -204,11 +199,6 @@ return array(
     "op_settings_individual_dept"   => "Назначено индивидуально:",
     "op_settings_individual_dept_desc" => "Эти отделы в дополнение к любым отделам, на которые оператор назначен через свои группы выше.",
     "also_registered_other_brand"   => "Этот пользователь также зарегистрирован в :brands бренде. | Этот пользователь также зарегистрирован в :brands брендах.",
-    "signature"                     => "Signature | Signatures",
-    "signature_desc"                => "Создать персональные подписи тикетов с возможностью настройки на основе марки / отдела заявки. Подпись по умолчанию используется, когда не удается найти подпись для определенного отдела и / или марки.",
-    "operator_signature"            => "Подпись оператора | Подпись оператора",
-    "ticket_signature_desc"         => "Установить подпись по умолчанию для оператора.",
-    "operator_signature_desc"       => "Дополнительные подписи для конкретных отделов и / или брендов можно установить в разделе <a href=':route' target='_blank'> Подписи операторов </a>.",
     "view_organisation"             => "Просмотреть организацию",
     "new_owner"                     => "Новый владелец",
     "operator_role"                 => "Роль оператора | Роли оператора",
@@ -259,7 +249,6 @@ return array(
     "unlink_account"                => "Отвязать :record аккаунт ",
     "unlink_account_warning"        => "Отключение социальной учетной записи будет означать, что ее больше нельзя использовать для входа непосредственно в учетную запись.",
     "failed_login"                  => "Неудачный вход в систему | Неудачные входы в систему",
-    "resend_confirmation"           => "<strong><a href=':link'> Нажмите сюда </a></strong> чтобы получить новое подтверждение по электронной почте.",
 
     /*
      * 2.4.0
@@ -276,30 +265,15 @@ return array(
     /*
      * 2.5.0
      */
-    "organisation_domain_desc"      => "Введите каждый домен, принадлежащий организации. Пользователи, которые зарегистрируются с адресом электронной почты, который принадлежит одному из этих доменов, будут автоматически добавлены в организацию. Мы рекомендуем убедиться, что пользователь действительно является частью организации, если он имеет не подтверждено право собственности на их адрес электронной почты. ",
-    "changing_email_desc"           => "Изменение адреса электронной почты потребует от пользователя подтверждения права собственности на свой адрес электронной почты при следующем входе в систему.",
-    "unconfirmed_user_desc"         => "Пользователь не подтвердил право собственности на этот адрес электронной почты.",
-    "unregistered_user_desc"        => "Эта учетная запись была создана автоматически без пароля. Вы можете отправить электронное письмо с подтверждением, чтобы они могли создать собственную учетную запись или установить пароль для них ниже.",
-    "send_confirmation_email"       => "Отправить письмо с подтверждением",
-    "mark_as_confirmed"             => "Пометить как подтвержденный",
-    "password_reset_already"        => "Вы уже подтвердили право собственности на этот адрес электронной почты, вы можете перейти к входу в систему.",
-    "unconfirmed_account"           => "Пожалуйста, проверьте свою электронную почту, чтобы подтвердить право собственности на этот адрес электронной почты.",
     "success_register_desc"         => "Спасибо за регистрацию учетной записи. Проверьте свою электронную почту, чтобы завершить настройку учетной записи.",
-    "resend_confirmation_sent"      => "Новое электронное письмо с подтверждением было отправлено и должно прибыть через несколько минут.",
-    "register_confirm_desc"         => "Благодарим Вас за подтверждение права собственности на ваш адрес электронной почты. Пожалуйста, введите пароль ниже, чтобы завершить настройку учетной записи.",
-    "thank_you_confirm"             => "Спасибо за подтверждение права собственности на ваш адрес электронной почты.",
     "use_gravatar"                  => "Использовать Gravatar",
     "use_gravatar_desc"             => "Gravatar - это сервис, который предлагает глобально признанный аватар для своих зарегистрированных пользователей. Служба поддержки автоматически отправит запрос на secure.gravatar.com с хешем MD5 каждого адреса электронной почты пользователя для помощи в отображении аватара . Хеш MD5 также может быть публично видим в HTML-интерфейсе. Мы рекомендуем обновить вашу политику конфиденциальности, если эта функция включена. ",
 
     /*
      * 2.6.0
      */
-    "updating_email_address"        => "Чтобы обновить адрес электронной почты, нажмите на ссылку, отправленную на :email подтвердить право собственности на новый адрес электронной почты.",
-    "confirmation"                  => "Подтверждение",
-    "confirmation_email_in_use"     => "Адрес электронной почты уже используется другой учетной записью.",
     "continue_to_login"             => "Пожалуйста, продолжите <a href=':route'> вход на этой странице </a>.",
     "reset_request_desc"            => "Если соответствующая учетная запись была найдена, в ближайшее время вам будет отправлено электронное письмо, позволяющее вам сбросить пароль.",
-    "password_reset_error"          => "Возможно, срок действия ссылки истек. Если по какой-либо причине ваша ссылка не работает, запросите новую.",
 
     /*
      * 3.0.0
@@ -339,7 +313,7 @@ return array(
     "logged_in"                     => "Logged In",
     "revoke_session_desc"           => "Revoking a session will log the device out of the operator panel. It will also revoke all remember me tokens for other devices.",
 
-    /**
+    /*
      * 4.0.0
      */
     "verify_phone_number"           => "Verify Phone Number",
@@ -348,5 +322,68 @@ return array(
     "verify_phone_code_send_error"  => "An error occurred while sending the verification code. Please try again later.",
     "verify_phone_code_error"       => "Code could not be verified.",
     "logged_in_as"                  => "Logged in as :name",
+
+    /*
+     * 4.1.0
+     */
+    "merge_users"                   => "Merge Users",
+    "merge_user_into"               => "Select user to merge into",
+    "merge_organisations"           => "Merge Organisations",
+    "merge_organisation_into"       => "Select organisation to merge into",
+    "search_for_organisation"       => "Search for organisation...",
+
+    /*
+     * 4.2.0
+     */
+    "reply_template"                => "Reply Template|Reply Templates",
+    "reply_template_desc"           => "Set a personal reply template that prefills the textarea when starting to compose a reply, with the option to customise based on the brand/department of the ticket. The default reply template is used when a reply template for a specific department and/or brand cannot be found.",
+    "operator_reply_template"       => "Operator Reply Template|Operator Reply Templates",
+    "ticket_reply_template_desc"    => "Set the operator's default ticket reply template.",
+    "operator_reply_template_desc"  => "Further reply templates for specific departments and/or brands can be set in the <a href=':route' target='_blank'>Operator Reply Templates</a> section.",
+
+    /*
+     * 5.0.0
+     */
+    "verified"                      => "Verified",
+    "unverified"                    => "Unverified",
+    "unverified_email_desc"         => "User has not verified ownership of this email address.",
+    "unverified_account"            => "Please check your email to verify ownership of this email address.",
+    "changing_email_desc"           => "Изменение адреса электронной почты потребует от пользователя подтверждения права собственности на свой адрес электронной почты при следующем входе в систему.",
+    "unregistered_user_desc"        => "Эта учетная запись была создана автоматически без пароля. Вы можете отправить электронное письмо с подтверждением, чтобы они могли создать собственную учетную запись или установить пароль для них ниже.",
+    "send_verification_email"       => "Send Verification Email",
+    "mark_as_verified"              => "Mark as Verified",
+    "password_reset_already"        => "Вы уже подтвердили право собственности на этот адрес электронной почты, вы можете перейти к входу в систему.",
+    "verification_email_resent"     => "A new verification email has been sent and should arrive in a few minutes.",
+    "verified_set_password_desc"    => "Thank you for verifying ownership of your email, please enter a password below to finish your account set up.",
+    "thank_you_for_verifying_email" => "Thank you for verifying ownership of your email address.",
+    "organisation_domain_desc"      => "Введите каждый домен, принадлежащий организации. Пользователи, которые зарегистрируются с адресом электронной почты, который принадлежит одному из этих доменов, будут автоматически добавлены в организацию. Мы рекомендуем убедиться, что пользователь действительно является частью организации, если он имеет не подтверждено право собственности на их адрес электронной почты. ",
+    "resend_verification_email"     => "Resend Verification Email",
+    "updating_email_address"        => "Чтобы обновить адрес электронной почты, нажмите на ссылку, отправленную на :email подтвердить право собственности на новый адрес электронной почты.",
+    "email_verification"            => "Email Verification",
+    "email_verification_already_in_use" => "The email address is already in use by another account.",
+    "verification_link_expired"     => "The verification link may have expired. If your link isn't working for any reason, please request a new one.",
+    "user_invited_to_organisation"  => "The user has been invited to the organisation by email, they must click the link and set up a password to complete their account setup.",
+    "invite_user"                   => "Invite User",
+    "organisation_invite_user"      => "Invite user to organisation",
+    "user_already_in_organisation"  => "The user is already part of an organisation.",
+    "invitations"                   => "Invitation|Invitations",
+    "invite_exists"                 => "The user has already been invited.",
+    "success_join"                  => "You are now a member of the organisation :name.",
+    "error_join"                    => "The invitation code could not be found, or has expired.",
+    "verify_to_view_tickets"        => "Please verify all additional email addresses or remove unverified email addresses under your account profile.",
+
+    /*
+     * 5.2.3
+     */
+    "display_notifications_desc"    => "Система уведомит вас, когда будут созданы новые заявки или ответы, или когда другие операторы войдут в систему. Вы можете выбрать между уведомлениями на рабочем столе или уведомлениями в браузере, либо полностью отключитьо их.",
+
+    /*
+     * 5.3.0
+     */
+    "email_verified"                => "Email Verified",
+    "registered_desc"               => "If the user has a password set and is able to login to the frontend.",
+    "new_operator_account_desc"     => "You can send a verification email to let the operator set up their own account or toggle to set a password for them below.",
+    "operator_set_password_desc"    => "Please enter a password below to finish setting up your operator account.",
+    "password_set_success"          => "Password set successfully!",
 
 );
