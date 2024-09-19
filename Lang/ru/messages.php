@@ -9,8 +9,6 @@ return array(
 
     "save_order"            => "Попытка сохранить обновленный порядок элементов",
 
-    "show_all_results"      => "Показать все результаты &raquo;",
-
     "are_you_sure"          => "Вы уверены?",
     "yes_im_sure"           => "Да, я уверен",
 
@@ -85,7 +83,6 @@ return array(
 
     "missing_extension"     => "Отсутствует расширение",
     "php_ldap_missing"      => "Расширение php-ldap требуется для использования аутентификации LDAP. Пожалуйста, включите его и обновите страницу.",
-    "php_imap_missing"      => "Для использования Email Download требуется расширение php-imap. Если вы хотите использовать Email Download, включите расширение и обновите страницу.",
 
     /*
      * 2.0.3
@@ -153,5 +150,22 @@ return array(
      */
     "popup_blocked"         => "Your browser is blocking popup windows. Please enable popups and redirects on this website in order to use the preview feature.",
     "error_editing_message" => "There was an error while trying to edit this message.",
+
+    /*
+     * 4.1.1
+     */
+    "brand_not_enabled"     => "This action cannot be performed as the brand is not enabled.",
+    "cannot_reply_to_internal" => "A user cannot reply to an internal ticket.",
+
+    /*
+     * 4.3.0
+     */
+    "show_all_results"      => "Показать все результаты &raquo;",
+
+    /*
+     * 5.0.0
+     */
+    "lock_timeout"          => "Lock Timeout",
+    "lock_timeout_desc"     => "The server is currently busy processing other requests. Please try again.",
 
 );

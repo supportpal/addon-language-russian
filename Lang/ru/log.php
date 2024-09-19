@@ -71,7 +71,6 @@ return array(
     "ticket_tag_removed"                => "Удален тег :new_value из тикета #:rel.",
     "ticket_slaplan_updated"            => "Обновлен план SLA по тикету #:rel с :old_value до :new_value.",
     "ticket_duetime_updated"            => "Обновлено время по тикету #:rel до :new_value.",
-    "ticket_duetime_paused"             => "Остановил положенное время на тикете #:rel до следующего ответа пользователя.",
     "ticket_customfield_updated"        => "Обновленные пользовательские поля в тикете #:rel.",
     "ticket_converted_user"             => "Конвертированный внутренний тикет #:rel к пользовательскому тикету.",
     "ticket_converted_internal"         => "Преобразованный пользовательский тикет #:rel к внутреннему тикету.",
@@ -114,7 +113,6 @@ return array(
      */
     "ticket_brand_disabled_reply"       => "Ответ не может быть добавлен из-за того, что тикет принадлежит бренду с ограниченными возможностями #:rel.",
     "personal_signatures_updated"       => "Обновленные личные подписи.",
-    "operator_signatures_updated"       => "Обновленный :rel's подписывание.",
     "check_email_failed"                => "Ошибка: не удалось загрузить электронную почту из учетной записи :old_value: ':rel'.",
     "ticket_added_cc"                   => "Email(s) :new_value добавлено в список адресов CC для тикета #:rel.",
     "ticket_removed_cc"                 => "Email(s) :old_value удален из списка CC обращаются за тикет #:rel.",
@@ -132,7 +130,6 @@ return array(
     "ticket_macro_applied"              => "Макрос ':new_value' переведен на тикет #:rel.",
     "ticket_macro_automatic"            => "Макрос ':new_value' автоматически запускается на тикете #:rel.",
     "email_template_not_found"          => "Email шаблон ID ':new_value' не найден, Прервана отправка электронной почты.",
-    "ticket_duetime_unset"              => "Сбросить время в тикете #:rel.",
     "private_conversation_started"      => "Начался разговор с :rel.",
     "private_message_sent"              => "Отправил сообщение :rel.",
     "not_imported_replies_disabled"     => "email :extra_rel1 был получен за тикет #:rel, но не был импортирован, так как ответы на электронную почту тикетов отключены.",
@@ -166,8 +163,6 @@ return array(
     "email_send_failed"                 => "Не удалось отправить электронное письмо.",
     "ticket_brand_updated"              => "Обновленный бренд по продаже тикетов #:rel с :old_value на :new_value.",
     "export_scheduled"                  => "Экспорт пользователя :rel был запланирован заранее.",
-    "export_generated"                  => "Экспорт :new_value от пользователя :rel был сгенерирован и сохранен в системе.",
-    "export_deleted"                    => "Экспорт :old_value от пользователя :rel был удален из системы.",
     "deleted_inactive_records"          => "Автоматически удалять :old_value неактивный :rel.",
     "deleted_old_records"               => "Автоматически удаляются старые :rel записи.",
     "sent_email_to_user_group"          => "Электронная почта в очереди для группы пользователей ':new_value' на тикеты #:rel.",
@@ -202,5 +197,74 @@ return array(
      * 3.0.0
      */
     "selfservice_article_neutral"       => "Neutrally rated article :rel.",
+
+    /*
+     * 4.1.0
+     */
+    "user_merged"                       => "User :old_value merged into user :rel.",
+    "user_organisation_merged"          => "User organisation :old_value merged into user organisation :rel.",
+
+    /*
+     * 4.2.0
+     */
+    "operator_reply_templates_updated"  => "Updated :rel's reply templates.",
+
+    /*
+     * 5.0.0
+     */
+    "addon_activated"                   => "Activated :item (add-on) :rel.",
+    "addon_deactivated"                 => "Deactivated :item (add-on) :rel.",
+    "addon_installed"                   => "Installed :item (add-on) :rel.",
+    "addon_uninstalled"                 => "Uninstalled :item (add-on) :rel.",
+    "addon_cancelled"                   => "Cancelled :item (add-on) :rel.",
+    "addon_updated"                     => "Updated :item (add-on) :rel to version :new_value.",
+    "ticket_reply_duetime_updated"      => "Updated the reply due time on ticket #:rel to :new_value.",
+    "ticket_resolve_duetime_updated"    => "Updated the resolve due time on ticket #:rel to :new_value.",
+    "ticket_duetime_unset"              => "Сбросить время в тикете #:rel.",
+    "ticket_reply_duetime_unset"        => "Unset the reply due time on ticket #:rel.",
+    "ticket_resolve_duetime_unset"      => "Unset the resolve due time on ticket #:rel.",
+    "ticket_duetime_paused"             => "Остановил положенное время на тикете #:rel до следующего ответа пользователя.",
+    "ticket_duetime_unpaused"           => "Unpaused the due times on ticket #:rel.",
+    "user_email_verified"               => "Verified their email address.",
+    "marked_email_as_verified"          => "Verified ownership of email address on behalf of user :rel.",
+    "user_invited_to_organisation"      => "User :rel invited to organisation :extra_rel1.",
+    "user_accepted_organisation_invite" => "User :rel accepted invitation to organisation :extra_rel1.",
+    "user_additional_email_verified"    => "Verified an additional email address (:new_value).",
+    "export_generated"                  => "Экспорт :new_value от пользователя :rel был сгенерирован и сохранен в системе.",
+    "export_deleted"                    => "Экспорт :old_value от пользователя :rel был удален из системы.",
+    "user_export_generated"             => "Export :new_value of user :rel has been generated and stored on the system.",
+
+    /*
+     * 5.0.2
+     */
+    "personal_reply_templates_updated"  => "Updated their reply templates.",
+
+    /*
+     * 5.1.0
+     */
+    "ticket_deleted_attachment"         => "Deleted attachment ':old_value' from ticket #:rel.",
+    "user_added_to_group"               => "User :rel added to user group :new_value.",
+    "user_removed_from_group"           => "User :rel removed from user group :old_value.",
+    "operator_added_to_group"           => "Operator :rel added to operator group :new_value.",
+    "operator_removed_from_group"       => "Operator :rel removed from operator group :old_value.",
+
+    /*
+     * 5.2.0
+     */
+    "background_job_deleted"            => "Deleted background job :rel.",
+    "background_job_retried"            => "Retried background job :rel.",
+
+    /*
+     * 5.3.0
+     */
+    "operator_password_set"             => "Set a password for their account.",
+    "password_reset_sent"               => "Reset password link sent to :rel.",
+
+    /*
+     * 5.4.0
+     */
+    "ticket_feedback_rating"            => "Rated ticket #:rel as :extra_rel1.", // Rated ticket #123 as 'general.good / general.bad / general.neutral'.
+    "ticket_feedback_saved"             => "Saved :extra_rel1 on ticket #:rel.", // Saved (lowercase ticket.feedback) on ticket #123
+    "selfservice_feedback_saved"        => "Saved :extra_rel1 on article :rel.", // Saved (lowercase ticket.feedback) on article 'Foo bar'
 
 );

@@ -26,11 +26,7 @@ return array(
     /*
      * 2.2.0
      */
-    "increase_due_time"         => "Увеличить время",
     "close_and_lock_ticket"     => "Закрыть и заблокировать тикет",
-    "pause_due_time"            => "Пауза срока",
-    "reduce_due_time"           => "Сократить время",
-    "set_due_time"              => "Установить время",
     "unlock_ticket"             => "Разблокировать тикет",
     "update_sla_plan"           => "Обновить план SLA",
     "update_subject"            => "Обновить тему",
@@ -74,8 +70,17 @@ return array(
     "block_user"                => "Блокировать пользователя",
 
     /*
-     * 2.6.0
+     * 5.0.0
      */
-    "clear_due_time"            => "Очистить время",
+    "increase_resolve_due_time" => "Increase resolution due time",
+    "increase_reply_due_time"   => "Increase reply due time",
+    "reduce_resolve_due_time"   => "Reduce resolution due time",
+    "reduce_reply_due_time"     => "Reduce reply due time",
+    "set_resolve_due_time"      => "Set resolution due time",
+    "set_reply_due_time"        => "Set reply due time",
+    "clear_resolve_due_time"    => "Clear resolution due time",
+    "clear_reply_due_time"      => "Clear reply due time",
+    "pause_due_times"           => "Pause due times",
+    "unpause_due_times"         => "Unpause due times",
 
 );
