@@ -76,7 +76,6 @@ return array(
 
     "ldap_account"                  => "Учетная запись LDAP | Учетные записи LDAP",
     "ldap_operator_desc"            => "Поиск существующего оператора или создание нового.",
-    "ldap_server"                   => "Сервер LDAP",
     "ldap_server_desc"              => "Имя хоста сервера. Кроме того, вы можете указать полный URI LDAP. Например: ldaps: //ldap.server: 1234 / подключится через SSL к порту 1234.",
     "ldap_username"                 => "Имя пользователя LDAP",
     "ldap_username_desc"            => "Имя пользователя, которое оператор будет использовать для входа в службу поддержки (их имя пользователя LDAP.)",
@@ -85,9 +84,6 @@ return array(
     "ldap_details"                  => "Детали LDAP",
 
     "operator_details"              => "Подробности оператора",
-
-    "email_notifications"           => "Уведомления по электронной почте",
-    "email_notifications_desc"      => "Уведомления по электронной почте, которые будут получены из системы.",
 
     "enable_ldap"                   => "Включить вход в LDAP",
     "enable_ldap_desc"              => "Если вы используете LDAP, вы можете включить его для входа оператора. После включения перейдите на страницу настроек учетных записей LDAP, чтобы настроить его.",
@@ -132,7 +128,6 @@ return array(
     "two_fa_code"                   => "Код 2FA",
     "two_fa_secret"                 => "Секретный ключ 2FA",
     "two_fa_secret_desc"            => "Пожалуйста, сохраните это где-нибудь в безопасности, так как оно понадобится вам для повторного добавления учетной записи в аутентификатор, в случае утери телефона или проблем с аутентификатором.",
-    "display_notifications"         => "Показать уведомления",
     "desktop_notifications"         => "ПК уведомления",
     "browser_notifications"         => "Уведомления браузера",
 
@@ -373,11 +368,6 @@ return array(
     "verify_to_view_tickets"        => "Please verify all additional email addresses or remove unverified email addresses under your account profile.",
 
     /*
-     * 5.2.3
-     */
-    "display_notifications_desc"    => "Система уведомит вас, когда будут созданы новые заявки или ответы, или когда другие операторы войдут в систему. Вы можете выбрать между уведомлениями на рабочем столе или уведомлениями в браузере, либо полностью отключитьо их.",
-
-    /*
      * 5.3.0
      */
     "email_verified"                => "Email Verified",
@@ -386,4 +376,45 @@ return array(
     "operator_set_password_desc"    => "Please enter a password below to finish setting up your operator account.",
     "password_set_success"          => "Password set successfully!",
 
+    /*
+     * 5.7.0
+     */
+    "reply_template_cursor_position" => "Use the 'Set Cursor Position' option in the editor to specify where the cursor will be positioned when the user opens the editor to reply to a ticket.",
+    "system_bot_desc"               => "This is a system bot account used for automated actions. You can only edit its name and avatar.",
+    "notification_settings"         => "Notification Settings",
+    "operator_notifications"        => "Operator Notifications",
+    "operator_notifications_desc"   => "Update the notification preferences for the operator account.",
+    "default_department_subscription" => "Default Department Subscription",
+    "default_department_subscription_desc" => "Set the default notification subscription to determine when notifications are sent on ticket events. This subscription will be used for any department that does not have a specific subscription configured.",
+    "department_subscriptions"      => "Department Subscriptions",
+    "department_subscriptions_desc" => "Customise the notification subscription for each department.",
+    "subscription_type"             => "Subscription Type",
+    "subscription_default"          => "Default",
+    "subscription_default_desc"     => "Use the default department subscription for this department.",
+    "subscription_all_activity"     => "All Activity",
+    "subscription_all_activity_desc" => "Receive notifications about all activity in this department.",
+    "subscription_unassigned_and_assigned" => "Unassigned and Assigned",
+    "subscription_unassigned_and_assigned_desc" => "Receive notifications from this department when there are no assignees on the ticket, or when you are assigned. Notifications are also sent when watching the ticket or @mentioned.",
+    "subscription_assigned_only"    => "Assigned Only",
+    "subscription_assigned_only_desc" => "Receive notifications from this department only when assigned to the ticket. Notifications are also sent when watching the ticket or @mentioned.",
+    "subscription_ignore"           => "Ignore",
+    "subscription_ignore_desc"      => "Don't receive notifications for any activity in this department, apart from when watching or @mentioned.",
+    "configure_on_operator_notifications" => "Department-specific notification subscriptions can be set on the <a href=':route' target='_blank'>operator notifications</a> page.",
+    "notification_channel_email"    => "Email",
+    "notification_channel_browser"  => "Browser",
+    "browser_notifications_desc"    => "The system will notify you of certain events through the browser. You can choose between desktop notifications, in-app notifications, or disabling them completely.",
+    "failed_login_notification"     => "Failed Operator Login",
+    "failed_login_notification_desc" => "Notifies you when someone fails to log in to the operator panel or has their IP banned due to multiple failed login attempts.",
+    "notifications_desc"            => "Select the channels on which you would like to be notified about system events, or disable individual notifications completely.",
+    "in_app_notifications"          => "In-App Notifications",
+
+    /*
+     * 6.0.0
+     */
+    "ldap_start_tls_desc"           => "Whether to connect insecurely and upgrade the connection using StartTLS. If you're using the LDAPS protocol, this option should not be used.",
+    "ldap_ca_cert"                  => "CA Certificate",
+    "ldap_ca_cert_desc"             => "Optionally upload the LDAP server's CA certificate file. This is only necessary when using self-signed certificates.",
+    "ldap_server"                   => "Сервер LDAP",
+    "ldap_server_hostname"          => "Hostname",
+    "ldap_server_name_desc"         => "A friendly name to identify this LDAP server.",
 );

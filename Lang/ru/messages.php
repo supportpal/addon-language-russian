@@ -52,7 +52,6 @@ return array(
 
     "return_to"             => "Вернуться к :page.",
 
-    "session_expired"       => "Ваша сессия истекла, пожалуйста, войдите снова.",
     "session_refresh"       => "Ваша сессия истекла, обновите страницу и повторите попытку.",
 
     "general_error"         => "Произошла ошибка. Пожалуйста, попробуйте еще раз.",
@@ -73,8 +72,6 @@ return array(
     "forbidden"             => "запрещено",
 
     "not_logged_exception"  => "<strong>Упс! Что-то пошло не так.</strong><br />Пожалуйста, сообщите системному администратору, если ошибка не устранена.",
-
-    "too_many_ticket_reqs"  => "Слишком много запросов на тикеты сделано для :email. Предел :max в :decay минут.",
 
     "not_operator"          => "Что-то пошло не так. Выбранный оператор недействителен, пожалуйста, убедитесь, что он принадлежит к группе операторов, и у этой группы есть связанная роль.",
 
@@ -167,5 +164,15 @@ return array(
      */
     "lock_timeout"          => "Lock Timeout",
     "lock_timeout_desc"     => "The server is currently busy processing other requests. Please try again.",
+
+    /*
+     * 5.4.1
+     */
+    "throttle_error"        => "Too many attempts, please try again :in_time.", // :in_time becomes in 1 minute, etc
+
+    /*
+     * 6.0.0
+     */
+    "session_expired"       => "Ваша сессия истекла, пожалуйста, войдите снова.",
 
 );

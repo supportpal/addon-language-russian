@@ -33,7 +33,6 @@ return array(
     "excerpt"                   => "Отрывок",
     "associate_tag"             => "Связать статью с тегом...",
     "associate_category"        => "Ассоциированная статья с категорией...",
-    "published_desc"            => "Если статью можно просмотреть публично. Если она не опубликована, ее все равно можно просмотреть по прямому URL, если одна из категорий является общедоступной.",
     "registered_users_desc"     => "Переключить, чтобы показать статью только зарегистрированным пользователям.",
 
     "comment_by"                => "Комментировать",
@@ -150,12 +149,31 @@ return array(
      */
     "type_protected_desc"       => "Toggle to only show content in this type to logged in users.",
     "article_feedback"          => "Article Feedback",
-    "frontend_icon_desc"        => "Select a <a href='https://fontawesome.com/icons' target='_blank'>FontAwesome</a> regular icon to display on the frontend for your type, you can also search for a custom icon not included in the list (starting with 'fa-').",
     "comment_deleted"           => "Comment deleted",
 
     /*
      * 5.3.0
      */
     "in_reply_to"               => "in reply to",
+
+    /*
+     * 5.7.0
+     */
+    "comment_notification"      => "New Comment Posted",
+    "comment_notification_desc" => "Notifies you when a new comment is posted on a self-service article.",
+
+    /*
+     * 5.7.5
+     */
+    "published_desc"            => "Если статью можно просмотреть публично. Если она не опубликована, ее все равно можно просмотреть по прямому URL, если одна из категорий является общедоступной.",
+    "not_published"             => "Not Published",
+
+    /*
+     * 6.0.0
+     */
+    "frontend_icon_desc"        => "Select a <a href='https://fontawesome.com/icons' target='_blank'>FontAwesome</a> regular icon to display on the frontend for your type, you can also search for a custom icon not included in the list (starting with 'fa-').",
+    "icon_book"                 => "Book",
+    "icon_download"             => "Download",
+    "icon_newspaper"            => "Newspaper",
 
 );
