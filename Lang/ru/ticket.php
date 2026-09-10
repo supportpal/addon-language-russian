@@ -131,7 +131,6 @@ return array(
     "feedback_expired"          => "тикет был открыт на некоторое время, и, к сожалению, он больше не может быть оценен.",
     "feedback_questions"        => "Если бы вы могли уделить немного времени, пожалуйста, ответьте на следующие вопросы, чтобы помочь нам еще больше улучшить поддержку, которую мы предлагаем.",
     "feedback_for_ticket"       => "Отзыв для тикета #:number",
-    "feedback_rating_desc"      => "Поддержка, полученная по этому тикету, была оценена пользователем как <strong> :rating </ strong>.",
 
     // Custom fields
     "customfield"               => "Пользовательские поля для тикетов | Пользовательские поля для тикетов",
@@ -158,7 +157,6 @@ return array(
     "allowed_files"             => "Разрешенные типы файлов вложений",
 
     // Drafts
-    "draft_saved"               => "Черновик сохранен в :time",
     "save_draft"                => "Сохранить черновик",
     "discard_draft"             => "Удалить черновить",
 
@@ -202,7 +200,6 @@ return array(
     "reply_options"             => "Параметры ответа",
     "send_email_to_users"       => "Отправить письмо пользователю (-ям)",
     "send_email_to_operators"   => "Отправить письмо оператору (-ам)",
-    "back_to_grid"              => "Вернуться к сетке тикетов",
     "take"                      => "взять",
     "take_ownership"            => "Take Ownership",
     "pause_duetime"             => "Время паузы",
@@ -264,7 +261,6 @@ return array(
     "no_departments_found"      => "Отделов не найдено. Нажмите <a href=':route'>сюда</a> для создания.",
     "no_operators_found"        => "Операторы не найдены. Нажмите <a href=':route'>сюда</a> для создания.",
     "change_priority"           => "Изменить приоритет",
-    "add_tag"                   => "Добавить тег ",
 
     "unlock"                    => "Разблокировать",
     "merged"                    => "Объединенное",
@@ -279,7 +275,6 @@ return array(
 
     "pause_duetime_desc"        => "Если в этом тикете есть активный план SLA, приостановите оставшееся время до окончания срока действия. Срок подачи заявки начнется снова только после добавления ответа или заметки к заявке (в том числе из последующих действий).",
 
-    "add_cc"                    => "Добавить CC",
     "reply_above_line"          => "Пожалуйста, ответьте над этой строкой ",
 
     "email_settings"            => "Email настройки",
@@ -289,11 +284,6 @@ return array(
     "track_ticket_not_found"    => "Не удалось найти тикет с указанным номером и адресом электронной почты пользователя.",
 
     "type_in_tags"              => "Введите теги",
-
-    /*
-     * 2.0.1
-     */
-    "allowed_files_desc"        => "Список расширений файлов, разделенных каналом | символ, который разрешен в качестве вложений. Например: txt | png | jpg. Чтобы разрешить все вложения, введите: ?.* ",
 
     /*
      * 2.0.2
@@ -310,14 +300,10 @@ return array(
     "default_reply_options_desc" => "Выберите параметры ответа по умолчанию, которые будут установлены при открытии или ответе на заявку. Опция ': reply_option' будет отмечена галочкой в зависимости от настройки отдела:: Department_option.",
     "associate_response_tag"    => "Связать готовый ответ с тегом ...",
     "canned_response_tags_desc" => "Добавьте теги, которые могут помочь найти постоянный ответ при ответе на заявку.",
-    "append_ip_address"         => "Добавить IP-адрес ",
-    "append_ip_address_desc"    => "Добавлять IP-адрес пользователей к их сообщениям, когда они открывают и отвечают на заявки из внешнего интерфейса.",
     "unassign_operator"         => "Исключить оператора",
-    "remove_tag"                => "Удалить тег",
     "message_clipped"           => "[Message Clipped]",
     "view_entire_message"       => "Просмотреть все сообщение",
     "no_custom_fields"          => "Не найдено пользовательских полей. Нажмите <a href=':route'> здесь </a>, чтобы создать его.",
-    "follow_up_active"          => "A <a class='view-followup' style='text-decoration: underline'> follow </a> в настоящее время активен в этом тикете и будет работать <strong> :time </ strong > ",
     "disable_user_email_replies" => "Отключить ответы электронной почты пользователя",
 
     /*
@@ -423,7 +409,6 @@ return array(
     "forwarded_to"              => "Отправлено в",
     "new_operator_reply"        => "Ответ нового оператора",
     "new_user_reply"            => "Ответ нового пользователя",
-    "add_bcc"                   => "Добавить BCC",
     "at_least_one_recipient"    => "Пожалуйста, укажите хотя бы одного получателя.",
     "forwarded_message"         => "---------- Пересланное сообщение ----------",
 
@@ -483,7 +468,6 @@ return array(
      * 2.6.0
      */
     "follow_ups"                => "Последующие действия ",
-    "follow_up_multiple_active" => "Множественные <a class='view-followup' style='text-decoration: underline;'> последующие действия </a> в настоящее время активны в этом тикете, и следующий запланированный запуск будет выполнен <strong> :time </ STRONG> ",
     "follow_up_no_actions"      => "Последующие действия не настроены, подтвердите, если хотите продолжить.",
     "status_after_running"      => "Статус после запуска",
     "older_messages"            => " :count старые сообщения",
@@ -497,11 +481,6 @@ return array(
     "im_not_sure"               => "I'm not sure",
     "auto_reply_detected"       => "Auto-reply detected - no notification will be sent to the user(s).",
     "cc_desc"                   => "Вы можете добавить других пользователей в тикет введя их адрес электронной почты здесь",
-
-    /*
-     * 3.2.0
-     */
-    "drafting_message"          => "<strong>:name</strong> was drafting a message",
 
     /*
      * 3.3.0
@@ -535,11 +514,8 @@ return array(
      * 4.1.0
      */
     "ticket_format_desc"        => "Может содержать буквенно-цифровые символы и специальные символы <code> -_. +! *, </ Code> <br /> Также могут использоваться следующие переменные:% S для порядкового номера | % N для случайного числа | % L для случайной буквы <br /> Используйте {число}, чтобы повторить <strong> только </ strong> после% N или% L, например, % N {4} соответствует 4 случайным числам,% L {3} соответствует 3 случайным буквам <br /> Следующее <a href = 'http: //php.net/manual/en/function.date.php' target = '_ blank'> PHP Date </a> Параметры с префиксом% Y, y, m, d, j, g, G, h, H, i, s",
-    "append_ip_address_api_desc" => "Append the user's IP address to the end of their ticket messages (requires user_ip_address data to be provided).",
     "check_spam"                => "Check Spam Rules",
     "check_spam_api_desc"       => "Block messages which match spam rules.",
-    "enable_throttling"         => "Enable Throttling",
-    "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
     "captcha_desc"              => "Когда капча должна быть показана пользователям, открывающим новые тикеты.",
 
     /*
@@ -572,5 +548,84 @@ return array(
     "reject_duplicate_emails"   => "Reject Duplicate Emails",
     "reject_duplicate_emails_desc" => "Stop emails being imported more than once, detected based on the Message-ID header.",
     "duplicate_email_detected"  => "Duplicate email that has already been imported.",
+
+    /*
+     * 5.5.0
+     */
+    "rate_limiting"             => "Rate Limiting",
+    "max_requests"              => "Max Requests",
+    "decay_time"                => "Decay Time",
+    "exclude_addresses"         => "Exclude Addresses",
+    "exclude_addresses_desc"    => "A list of email addresses which are excluded from rate limits.",
+    "enable_throttling"         => "Enable Throttling",
+    "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
+    "close_without_notify"      => "Close (without notification)",
+    "lock"                      => "Lock",
+    "pin"                       => "Pin",
+    "unpin"                     => "Unpin",
+
+    /*
+     * 5.6.0
+     */
+    "copy_to_new_filter"        => "Copy to New Filter",
+    "alias_support"             => "Alias Support",
+    "alias_support_desc"        => "Alias support analyses the recipient addresses of incoming emails to determine which department the email should be opened in. Disabling alias support will open all emails in the department they were fetched in irrespective of the recipient addresses.",
+
+    /*
+     * 5.7.0
+     */
+    "run_as_operator"           => "Run As",
+    "run_as_operator_desc"      => "Execute the following actions as the selected operator: \":actions\"",
+    "use_ticket_print_view"     => "Please use the dedicated print view to print this ticket. You can access it by clicking the 'Print' option in the ticket view.",
+    "save_feedback"             => "Save Feedback",
+    "ticket_opened_notification" => "New Ticket Opened",
+    "ticket_opened_notification_desc" => "Notifies you when a new user or internal ticket has been opened.",
+    "user_reply_notification"   => "User Ticket Reply Posted",
+    "user_reply_notification_desc" => "Notifies you when a user replies to an existing ticket.",
+    "operator_reply_notification" => "Operator Ticket Reply Posted",
+    "operator_reply_notification_desc" => "Notifies you when another operator replies to a ticket.",
+    "operator_note_notification" => "Operator Ticket Note Posted",
+    "operator_note_notification_desc" => "Notifies you when another operator posts a note on a ticket.",
+    "assigned_notification"     => "Assigned to Ticket",
+    "assigned_notification_desc" => "Notifies you when you are assigned to a ticket.",
+    "department_changed_notification" => "Department Changed",
+    "department_changed_notification_desc" => "Notifies you when a ticket changes department.",
+    "mention_notification"       => "Mentioned",
+    "mention_notification_desc" => "Notifies you when you are mentioned on a ticket.",
+    "mark_resolved_and_post_reply" => "Mark as Resolved & Post Reply",
+    "allowed_files_desc"        => "Список расширений файлов, разделенных каналом | символ, который разрешен в качестве вложений. Например: txt | png | jpg. Чтобы разрешить все вложения, введите: ?.* ",
+
+    /*
+     * 6.0.0
+     */
+    "back_to_grid"              => "Вернуться к сетке тикетов",
+    "stay_on_ticket"            => "Stay on Ticket",
+    "draft_saved"               => "Черновик сохранен в :time",
+    "drafting_message"          => "<strong>:name</strong> was drafting a message",
+    "feedback_notification"     => "Feedback Posted",
+    "feedback_notification_desc" => "Notifies you when feedback is posted on a ticket.",
+    "notify_feedback"           => "Feedback Notifications",
+    "notify_feedback_desc"      => "Specify which feedback responses from this form should trigger notifications to operators.",
+    "notify_all_feedback"       => "Notify on all feedback",
+    "notify_neutral_bad_feedback" => "Notify on neutral & bad feedback only",
+    "notify_bad_feedback"       => "Notify on bad feedback only",
+    "timeline"                  => "Timeline",
+    "filter_timeline"           => "Filter Timeline",
+    "timeline_replies"          => "Replies",
+    "timeline_forwards"         => "Forwards",
+    "timeline_customfields"     => "Custom field changes",
+    "timeline_sla"              => "SLA & due time changes",
+    "timeline_messages"         => "Message & note changes",
+    "timeline_userinfo"         => "User information & changes",
+    "timeline_assignment"       => "Assignment changes",
+    "timeline_state"            => "State changes",
+    "timeline_merging"          => "Merging, linking & splitting",
+    "max_requests_desc"         => "Set the maximum number of tokens available before a user is rate limited. Rate limiting works on a token system: creating a new ticket costs 3 tokens and replying to an existing ticket costs 1 token. The total number of tokens available resets after the decay time period.",
+    "decay_time_desc"           => "The number of minutes until the available tokens are reset.",
+
+    /*
+     * 6.1.0
+     */
+    "change_user"               => "Change User",
 
 );
